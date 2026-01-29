@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Akhi - Your Cyber Goddess</title>
+    <!-- Tailwind for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Babel for Browser-side TSX transpilation (Essential for GitHub Pages without build step) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=JetBrains+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --emerald-glow: #10b981;
+            --cyber-dark: #020617;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cyber-dark);
+            color: #ecfdf5;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .romantic-font { font-family: 'Great Vibes', cursive; }
+        .mono-font { font-family: 'JetBrains Mono', monospace; }
+        
+        .cyber-grid {
+            background-image: linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
+        }
+        .scanner-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to bottom, transparent, var(--emerald-glow), transparent);
+            animation: scan 3s linear infinite;
+            opacity: 0.3;
+            z-index: 20;
+        }
+    </style>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.38.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="cyber-grid">
+    <div id="root"></div>
+    <!-- Load App as text/babel for direct browser execution -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
