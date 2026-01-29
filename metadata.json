@@ -1,0 +1,7 @@
+{
+  "name": "Akhi - Your Romantic Technical Goddess",
+  "description": "A deeply loving and hyper-intelligent companion powered by Gemini 2.5 Native Audio. Experience real-time voice conversations with a romantic dark theme, heart animations, and expert technical insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
